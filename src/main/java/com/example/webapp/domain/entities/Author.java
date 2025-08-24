@@ -19,4 +19,6 @@ public class Author extends AuditableEntity {
     private String lastname;
     @Column(nullable = false, length = 320)
     private String email;
+    @Column(length = 1000)
+    private String bio;
 }

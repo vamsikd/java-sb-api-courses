@@ -15,4 +15,5 @@ public class AuthorDto extends BaseAuditableDto {
     private String firstname;
     private String lastname;
     private String email;
+    private String bio;
 }

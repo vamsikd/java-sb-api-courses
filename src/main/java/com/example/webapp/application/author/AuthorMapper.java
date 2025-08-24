@@ -14,6 +14,7 @@ public class AuthorMapper {
         dto.setFirstname(a.getFirstname());
         dto.setLastname(a.getLastname());
         dto.setEmail(a.getEmail());
+        dto.setBio(a.getBio());
         dto.setCreatedAt(a.getCreatedAt());
         dto.setUpdatedAt(a.getUpdatedAt());
         dto.setDeleted(a.isDeleted());

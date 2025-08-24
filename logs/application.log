@@ -1,0 +1,236 @@
+2025-08-25 01:07:37.844 [main] INFO  c.e.webapp.WebappApplicationTests  - Starting WebappApplicationTests using Java 21.0.8 with PID 34068 (started by vamsi in C:\Users\vamsi\Projects\java\spring-boot\webapp)
+2025-08-25 01:07:37.848 [main] DEBUG c.e.webapp.WebappApplicationTests  - Running with Spring Boot v3.5.4, Spring v6.2.9
+2025-08-25 01:07:37.849 [main] INFO  c.e.webapp.WebappApplicationTests  - No active profile set, falling back to 1 default profile: "default"
+2025-08-25 01:07:39.326 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate  - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-25 01:07:39.501 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate  - Finished Spring Data repository scanning in 163 ms. Found 4 JPA repository interfaces.
+2025-08-25 01:07:40.224 [main] INFO  o.h.jpa.internal.util.LogHelper  - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-25 01:07:40.285 [main] INFO  org.hibernate.Version  - HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-25 01:07:40.344 [main] INFO  o.h.c.i.RegionFactoryInitiator  - HHH000026: Second-level cache disabled
+2025-08-25 01:07:40.502 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo  - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-25 01:07:40.536 [main] INFO  com.zaxxer.hikari.HikariDataSource  - HikariPool-1 - Starting...
+2025-08-25 01:07:40.964 [main] INFO  com.zaxxer.hikari.pool.HikariPool  - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6fc1a1d5
+2025-08-25 01:07:40.966 [main] INFO  com.zaxxer.hikari.HikariDataSource  - HikariPool-1 - Start completed.
+2025-08-25 01:07:41.050 [main] INFO  o.hibernate.orm.connections.pooling  - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.34
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-25 01:07:42.058 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator  - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-25 01:07:42.610 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean  - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-25 01:07:43.638 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration  - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-25 01:07:44.323 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver  - Exposing 3 endpoints beneath base path '/actuator'
+2025-08-25 01:07:44.431 [main] INFO  c.e.webapp.WebappApplicationTests  - Started WebappApplicationTests in 7.092 seconds (process running for 9.38)
+2025-08-25 01:07:44.676 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean  - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-25 01:07:44.680 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource  - HikariPool-1 - Shutdown initiated...
+2025-08-25 01:07:44.694 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource  - HikariPool-1 - Shutdown completed.
+2025-08-25 01:08:29.379 [main] INFO  c.example.webapp.WebappApplication  - Starting WebappApplication using Java 21.0.8 with PID 22828 (C:\Users\vamsi\Projects\java\spring-boot\webapp\target\classes started by vamsi in C:\Users\vamsi\Projects\java\spring-boot\webapp)
+2025-08-25 01:08:29.382 [main] DEBUG c.example.webapp.WebappApplication  - Running with Spring Boot v3.5.4, Spring v6.2.9
+2025-08-25 01:08:29.383 [main] INFO  c.example.webapp.WebappApplication  - No active profile set, falling back to 1 default profile: "default"
+2025-08-25 01:08:30.375 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate  - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-25 01:08:30.532 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate  - Finished Spring Data repository scanning in 147 ms. Found 4 JPA repository interfaces.
+2025-08-25 01:08:31.050 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer  - Tomcat initialized with port 8080 (http)
+2025-08-25 01:08:31.062 [main] INFO  o.a.catalina.core.StandardService  - Starting service [Tomcat]
+2025-08-25 01:08:31.064 [main] INFO  o.a.catalina.core.StandardEngine  - Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-25 01:08:31.119 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]  - Initializing Spring embedded WebApplicationContext
+2025-08-25 01:08:31.120 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext  - Root WebApplicationContext: initialization completed in 1699 ms
+2025-08-25 01:08:31.335 [main] INFO  o.h.jpa.internal.util.LogHelper  - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-25 01:08:31.378 [main] INFO  org.hibernate.Version  - HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-25 01:08:31.406 [main] INFO  o.h.c.i.RegionFactoryInitiator  - HHH000026: Second-level cache disabled
+2025-08-25 01:08:31.634 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo  - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-25 01:08:31.660 [main] INFO  com.zaxxer.hikari.HikariDataSource  - HikariPool-1 - Starting...
+2025-08-25 01:08:31.947 [main] INFO  com.zaxxer.hikari.pool.HikariPool  - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@39a9becc
+2025-08-25 01:08:31.951 [main] INFO  com.zaxxer.hikari.HikariDataSource  - HikariPool-1 - Start completed.
+2025-08-25 01:08:32.023 [main] INFO  o.hibernate.orm.connections.pooling  - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.34
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-25 01:08:32.974 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator  - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-25 01:08:33.544 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean  - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-25 01:08:34.149 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration  - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-25 01:08:34.577 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver  - Exposing 3 endpoints beneath base path '/actuator'
+2025-08-25 01:08:34.668 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer  - Tomcat started on port 8080 (http) with context path '/'
+2025-08-25 01:08:34.679 [main] INFO  c.example.webapp.WebappApplication  - Started WebappApplication in 5.873 seconds (process running for 6.199)
+2025-08-25 01:08:43.781 [http-nio-8080-exec-3] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]  - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-25 01:08:43.783 [http-nio-8080-exec-3] INFO  o.s.web.servlet.DispatcherServlet  - Initializing Servlet 'dispatcherServlet'
+2025-08-25 01:08:43.784 [http-nio-8080-exec-3] INFO  o.s.web.servlet.DispatcherServlet  - Completed initialization in 1 ms
+2025-08-25 01:08:43.817 [http-nio-8080-exec-3] DEBUG c.e.w.c.CorrelationIdInterceptor f76d612b-d6c1-42ce-bb95-33187da10612 - MDC populated with correlationId: f76d612b-d6c1-42ce-bb95-33187da10612
+2025-08-25 01:08:43.958 [http-nio-8080-exec-3] INFO  c.e.w.a.author.AuthorServiceImpl f76d612b-d6c1-42ce-bb95-33187da10612 - Attempting to create author with email: Salma.Hettinger@example.com
+2025-08-25 01:08:44.060 [http-nio-8080-exec-3] INFO  c.e.w.a.author.AuthorServiceImpl f76d612b-d6c1-42ce-bb95-33187da10612 - Author created successfully with ID: 1. Publishing AuthorCreatedEvent.
+2025-08-25 01:08:44.061 [http-nio-8080-exec-3] INFO  c.e.w.a.events.AuthorEventListener f76d612b-d6c1-42ce-bb95-33187da10612 - AuthorCreatedEvent received for author ID: 1 and email: Salma.Hettinger@example.com
+2025-08-25 01:08:44.062 [http-nio-8080-exec-3] INFO  c.e.w.a.external.AuthorsBioService f76d612b-d6c1-42ce-bb95-33187da10612 - Fetching random bio from external API
+2025-08-25 01:08:44.360 [http-nio-8080-exec-3] INFO  c.e.w.a.author.AuthorServiceImpl f76d612b-d6c1-42ce-bb95-33187da10612 - AuthorCreatedEvent published for author ID: 1
+2025-08-25 01:08:45.613 [reactor-http-nio-2] INFO  c.e.w.a.external.AuthorsBioService  - Successfully fetched bio: Bacon ipsum dolor amet tongue drumstick cupim kiel...
+2025-08-25 01:08:45.614 [reactor-http-nio-2] INFO  c.e.w.a.events.AuthorEventListener  - Fetched bio for author ID 1: Bacon ipsum dolor amet tongue drumstick cupim kiel...
+2025-08-25 01:08:45.666 [reactor-http-nio-2] INFO  c.e.w.a.events.AuthorEventListener  - Author ID 1 updated with bio.
+2025-08-25 01:12:00.270 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown  - Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-25 01:12:00.277 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown  - Graceful shutdown complete
+2025-08-25 01:12:02.295 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean  - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-25 01:12:02.297 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource  - HikariPool-1 - Shutdown initiated...
+2025-08-25 01:12:02.303 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource  - HikariPool-1 - Shutdown completed.
+2025-08-25 01:15:02.479 [background-preinit] INFO  o.h.validator.internal.util.Version  - HV000001: Hibernate Validator 8.0.2.Final
+2025-08-25 01:15:02.534 [main] INFO  c.e.webapp.WebappApplicationTests  - Starting WebappApplicationTests using Java 21.0.8 with PID 30860 (started by vamsi in C:\Users\vamsi\Projects\java\spring-boot\webapp)
+2025-08-25 01:15:02.534 [main] DEBUG c.e.webapp.WebappApplicationTests  - Running with Spring Boot v3.5.4, Spring v6.2.9
+2025-08-25 01:15:02.535 [main] INFO  c.e.webapp.WebappApplicationTests  - No active profile set, falling back to 1 default profile: "default"
+2025-08-25 01:15:04.046 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate  - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-25 01:15:04.247 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate  - Finished Spring Data repository scanning in 190 ms. Found 4 JPA repository interfaces.
+2025-08-25 01:15:04.970 [main] INFO  o.h.jpa.internal.util.LogHelper  - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-25 01:15:05.046 [main] INFO  org.hibernate.Version  - HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-25 01:15:05.086 [main] INFO  o.h.c.i.RegionFactoryInitiator  - HHH000026: Second-level cache disabled
+2025-08-25 01:15:05.230 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo  - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-25 01:15:05.264 [main] INFO  com.zaxxer.hikari.HikariDataSource  - HikariPool-1 - Starting...
+2025-08-25 01:15:05.690 [main] INFO  com.zaxxer.hikari.pool.HikariPool  - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@10b7b5f0
+2025-08-25 01:15:05.694 [main] INFO  com.zaxxer.hikari.HikariDataSource  - HikariPool-1 - Start completed.
+2025-08-25 01:15:05.792 [main] INFO  o.hibernate.orm.connections.pooling  - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.34
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-25 01:15:06.798 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator  - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-25 01:15:07.374 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean  - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-25 01:15:08.490 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration  - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-25 01:15:09.367 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver  - Exposing 3 endpoints beneath base path '/actuator'
+2025-08-25 01:15:09.452 [main] INFO  c.e.webapp.WebappApplicationTests  - Started WebappApplicationTests in 7.417 seconds (process running for 9.769)
+2025-08-25 01:15:09.637 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean  - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-25 01:15:09.639 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource  - HikariPool-1 - Shutdown initiated...
+2025-08-25 01:15:09.649 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource  - HikariPool-1 - Shutdown completed.
+2025-08-25 01:15:42.183 [background-preinit] INFO  o.h.validator.internal.util.Version  - HV000001: Hibernate Validator 8.0.2.Final
+2025-08-25 01:15:42.236 [main] INFO  c.example.webapp.WebappApplication  - Starting WebappApplication using Java 21.0.8 with PID 33372 (C:\Users\vamsi\Projects\java\spring-boot\webapp\target\classes started by vamsi in C:\Users\vamsi\Projects\java\spring-boot\webapp)
+2025-08-25 01:15:42.238 [main] DEBUG c.example.webapp.WebappApplication  - Running with Spring Boot v3.5.4, Spring v6.2.9
+2025-08-25 01:15:42.239 [main] INFO  c.example.webapp.WebappApplication  - No active profile set, falling back to 1 default profile: "default"
+2025-08-25 01:15:43.229 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate  - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-25 01:15:43.386 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate  - Finished Spring Data repository scanning in 147 ms. Found 4 JPA repository interfaces.
+2025-08-25 01:15:43.974 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer  - Tomcat initialized with port 8080 (http)
+2025-08-25 01:15:43.986 [main] INFO  o.a.coyote.http11.Http11NioProtocol  - Initializing ProtocolHandler ["http-nio-8080"]
+2025-08-25 01:15:43.988 [main] INFO  o.a.catalina.core.StandardService  - Starting service [Tomcat]
+2025-08-25 01:15:43.988 [main] INFO  o.a.catalina.core.StandardEngine  - Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-25 01:15:44.046 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]  - Initializing Spring embedded WebApplicationContext
+2025-08-25 01:15:44.047 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext  - Root WebApplicationContext: initialization completed in 1763 ms
+2025-08-25 01:15:44.257 [main] INFO  o.h.jpa.internal.util.LogHelper  - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-25 01:15:44.295 [main] INFO  org.hibernate.Version  - HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-25 01:15:44.321 [main] INFO  o.h.c.i.RegionFactoryInitiator  - HHH000026: Second-level cache disabled
+2025-08-25 01:15:44.532 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo  - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-25 01:15:44.562 [main] INFO  com.zaxxer.hikari.HikariDataSource  - HikariPool-1 - Starting...
+2025-08-25 01:15:44.862 [main] INFO  com.zaxxer.hikari.pool.HikariPool  - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@48188d23
+2025-08-25 01:15:44.864 [main] INFO  com.zaxxer.hikari.HikariDataSource  - HikariPool-1 - Start completed.
+2025-08-25 01:15:44.941 [main] INFO  o.hibernate.orm.connections.pooling  - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.34
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-25 01:15:45.939 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator  - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-25 01:15:46.452 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean  - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-25 01:15:47.049 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration  - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-25 01:15:47.463 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver  - Exposing 3 endpoints beneath base path '/actuator'
+2025-08-25 01:15:47.537 [main] INFO  o.a.coyote.http11.Http11NioProtocol  - Starting ProtocolHandler ["http-nio-8080"]
+2025-08-25 01:15:47.554 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer  - Tomcat started on port 8080 (http) with context path '/'
+2025-08-25 01:15:47.565 [main] INFO  c.example.webapp.WebappApplication  - Started WebappApplication in 5.896 seconds (process running for 6.212)
+2025-08-25 01:15:58.709 [http-nio-8080-exec-5] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]  - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-25 01:15:58.710 [http-nio-8080-exec-5] INFO  o.s.web.servlet.DispatcherServlet  - Initializing Servlet 'dispatcherServlet'
+2025-08-25 01:15:58.711 [http-nio-8080-exec-5] INFO  o.s.web.servlet.DispatcherServlet  - Completed initialization in 1 ms
+2025-08-25 01:15:58.732 [http-nio-8080-exec-5] DEBUG c.e.w.c.CorrelationIdInterceptor 0aa6040e-79af-443b-a87b-c8dccc90d28d - MDC populated with correlationId: 0aa6040e-79af-443b-a87b-c8dccc90d28d
+2025-08-25 01:15:58.857 [http-nio-8080-exec-5] INFO  c.e.w.a.author.AuthorServiceImpl 0aa6040e-79af-443b-a87b-c8dccc90d28d - Attempting to create author with email: Pasquale.Towne@example.com
+2025-08-25 01:15:58.960 [http-nio-8080-exec-5] INFO  c.e.w.a.author.AuthorServiceImpl 0aa6040e-79af-443b-a87b-c8dccc90d28d - Author created successfully with ID: 1. Publishing AuthorCreatedEvent.
+2025-08-25 01:15:58.961 [http-nio-8080-exec-5] INFO  c.e.w.a.events.AuthorEventListener 0aa6040e-79af-443b-a87b-c8dccc90d28d - AuthorCreatedEvent received for author ID: 1 and email: Pasquale.Towne@example.com
+2025-08-25 01:15:58.962 [http-nio-8080-exec-5] INFO  c.e.w.a.external.AuthorsBioService 0aa6040e-79af-443b-a87b-c8dccc90d28d - Fetching random bio from external API
+2025-08-25 01:15:59.215 [http-nio-8080-exec-5] INFO  c.e.w.a.author.AuthorServiceImpl 0aa6040e-79af-443b-a87b-c8dccc90d28d - AuthorCreatedEvent published for author ID: 1
+2025-08-25 01:16:00.569 [reactor-http-nio-2] INFO  c.e.w.a.external.AuthorsBioService  - Successfully fetched bio: Bacon ipsum dolor amet spare ribs alcatra rump t-b...
+2025-08-25 01:16:00.569 [reactor-http-nio-2] INFO  c.e.w.a.events.AuthorEventListener  - Fetched bio for author ID 1: Bacon ipsum dolor amet spare ribs alcatra rump t-b...
+2025-08-25 01:16:00.682 [reactor-http-nio-2] INFO  c.e.w.a.events.AuthorEventListener  - Author ID 1 updated with bio.
+2025-08-25 01:19:40.186 [background-preinit] INFO  o.h.validator.internal.util.Version  - HV000001: Hibernate Validator 8.0.2.Final
+2025-08-25 01:19:40.229 [main] INFO  c.e.webapp.WebappApplicationTests  - Starting WebappApplicationTests using Java 21.0.8 with PID 32820 (started by vamsi in C:\Users\vamsi\Projects\java\spring-boot\webapp)
+2025-08-25 01:19:40.230 [main] DEBUG c.e.webapp.WebappApplicationTests  - Running with Spring Boot v3.5.4, Spring v6.2.9
+2025-08-25 01:19:40.230 [main] INFO  c.e.webapp.WebappApplicationTests  - No active profile set, falling back to 1 default profile: "default"
+2025-08-25 01:19:41.767 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate  - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-25 01:19:41.970 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate  - Finished Spring Data repository scanning in 190 ms. Found 4 JPA repository interfaces.
+2025-08-25 01:19:42.704 [main] INFO  o.h.jpa.internal.util.LogHelper  - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-25 01:19:42.774 [main] INFO  org.hibernate.Version  - HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-25 01:19:42.818 [main] INFO  o.h.c.i.RegionFactoryInitiator  - HHH000026: Second-level cache disabled
+2025-08-25 01:19:42.959 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo  - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-25 01:19:42.995 [main] INFO  com.zaxxer.hikari.HikariDataSource  - HikariPool-1 - Starting...
+2025-08-25 01:19:43.395 [main] INFO  com.zaxxer.hikari.pool.HikariPool  - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5d03df76
+2025-08-25 01:19:43.399 [main] INFO  com.zaxxer.hikari.HikariDataSource  - HikariPool-1 - Start completed.
+2025-08-25 01:19:43.497 [main] INFO  o.hibernate.orm.connections.pooling  - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.34
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-25 01:19:44.537 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator  - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-25 01:19:45.136 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean  - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-25 01:19:46.239 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration  - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-25 01:19:46.986 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver  - Exposing 3 endpoints beneath base path '/actuator'
+2025-08-25 01:19:47.074 [main] INFO  c.e.webapp.WebappApplicationTests  - Started WebappApplicationTests in 7.33 seconds (process running for 9.706)
+2025-08-25 01:19:47.262 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean  - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-25 01:19:47.264 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource  - HikariPool-1 - Shutdown initiated...
+2025-08-25 01:19:47.274 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource  - HikariPool-1 - Shutdown completed.
+2025-08-25 01:20:09.968 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown  - Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-25 01:20:09.976 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown  - Graceful shutdown complete
+2025-08-25 01:20:12.010 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean  - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-25 01:20:12.012 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource  - HikariPool-1 - Shutdown initiated...
+2025-08-25 01:20:12.017 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource  - HikariPool-1 - Shutdown completed.
+2025-08-25 01:20:31.576 [background-preinit] INFO  o.h.validator.internal.util.Version  - HV000001: Hibernate Validator 8.0.2.Final
+2025-08-25 01:20:31.621 [main] INFO  c.example.webapp.WebappApplication  - Starting WebappApplication using Java 21.0.8 with PID 15668 (C:\Users\vamsi\Projects\java\spring-boot\webapp\target\classes started by vamsi in C:\Users\vamsi\Projects\java\spring-boot\webapp)
+2025-08-25 01:20:31.621 [main] DEBUG c.example.webapp.WebappApplication  - Running with Spring Boot v3.5.4, Spring v6.2.9
+2025-08-25 01:20:31.622 [main] INFO  c.example.webapp.WebappApplication  - No active profile set, falling back to 1 default profile: "default"
+2025-08-25 01:20:32.571 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate  - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-25 01:20:32.724 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate  - Finished Spring Data repository scanning in 145 ms. Found 4 JPA repository interfaces.
+2025-08-25 01:20:33.230 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer  - Tomcat initialized with port 8080 (http)
+2025-08-25 01:20:33.244 [main] INFO  o.a.coyote.http11.Http11NioProtocol  - Initializing ProtocolHandler ["http-nio-8080"]
+2025-08-25 01:20:33.248 [main] INFO  o.a.catalina.core.StandardService  - Starting service [Tomcat]
+2025-08-25 01:20:33.248 [main] INFO  o.a.catalina.core.StandardEngine  - Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-25 01:20:33.307 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]  - Initializing Spring embedded WebApplicationContext
+2025-08-25 01:20:33.309 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext  - Root WebApplicationContext: initialization completed in 1645 ms
+2025-08-25 01:20:33.525 [main] INFO  o.h.jpa.internal.util.LogHelper  - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-25 01:20:33.563 [main] INFO  org.hibernate.Version  - HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-25 01:20:33.590 [main] INFO  o.h.c.i.RegionFactoryInitiator  - HHH000026: Second-level cache disabled
+2025-08-25 01:20:33.816 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo  - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-25 01:20:33.841 [main] INFO  com.zaxxer.hikari.HikariDataSource  - HikariPool-1 - Starting...
+2025-08-25 01:20:34.132 [main] INFO  com.zaxxer.hikari.pool.HikariPool  - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2d5d001f
+2025-08-25 01:20:34.135 [main] INFO  com.zaxxer.hikari.HikariDataSource  - HikariPool-1 - Start completed.
+2025-08-25 01:20:34.208 [main] INFO  o.hibernate.orm.connections.pooling  - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.34
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-25 01:20:35.173 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator  - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-25 01:20:35.726 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean  - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-25 01:20:36.353 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration  - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-25 01:20:36.771 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver  - Exposing 3 endpoints beneath base path '/actuator'
+2025-08-25 01:20:36.848 [main] INFO  o.a.coyote.http11.Http11NioProtocol  - Starting ProtocolHandler ["http-nio-8080"]
+2025-08-25 01:20:36.864 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer  - Tomcat started on port 8080 (http) with context path '/'
+2025-08-25 01:20:36.874 [main] INFO  c.example.webapp.WebappApplication  - Started WebappApplication in 5.804 seconds (process running for 6.19)
+2025-08-25 01:20:43.520 [http-nio-8080-exec-4] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]  - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-25 01:20:43.520 [http-nio-8080-exec-4] INFO  o.s.web.servlet.DispatcherServlet  - Initializing Servlet 'dispatcherServlet'
+2025-08-25 01:20:43.522 [http-nio-8080-exec-4] INFO  o.s.web.servlet.DispatcherServlet  - Completed initialization in 2 ms
+2025-08-25 01:20:43.544 [http-nio-8080-exec-4] DEBUG c.e.w.c.CorrelationIdInterceptor 6c7fd950-995b-4709-821f-7459a7ae7c5f - MDC populated with correlationId: 6c7fd950-995b-4709-821f-7459a7ae7c5f
+2025-08-25 01:20:43.676 [http-nio-8080-exec-4] INFO  c.e.w.a.author.AuthorServiceImpl 6c7fd950-995b-4709-821f-7459a7ae7c5f - Attempting to create author with email: Jose.Senger@example.com
+2025-08-25 01:20:43.780 [http-nio-8080-exec-4] INFO  c.e.w.a.author.AuthorServiceImpl 6c7fd950-995b-4709-821f-7459a7ae7c5f - Author created successfully with ID: 1. Publishing AuthorCreatedEvent.
+2025-08-25 01:20:43.780 [http-nio-8080-exec-4] INFO  c.e.w.a.events.AuthorEventListener 6c7fd950-995b-4709-821f-7459a7ae7c5f - AuthorCreatedEvent received for author ID: 1 and email: Jose.Senger@example.com
+2025-08-25 01:20:43.780 [http-nio-8080-exec-4] INFO  c.e.w.a.external.AuthorsBioService 6c7fd950-995b-4709-821f-7459a7ae7c5f - Fetching random bio from external API
+2025-08-25 01:20:44.148 [http-nio-8080-exec-4] INFO  c.e.w.a.author.AuthorServiceImpl 6c7fd950-995b-4709-821f-7459a7ae7c5f - AuthorCreatedEvent published for author ID: 1
+2025-08-25 01:20:45.315 [reactor-http-nio-2] INFO  c.e.w.a.external.AuthorsBioService  - Successfully fetched bio: Bacon ipsum dolor amet venison beef pork belly pig...
+2025-08-25 01:20:45.315 [reactor-http-nio-2] INFO  c.e.w.a.events.AuthorEventListener  - Fetched bio for author ID 1: Bacon ipsum dolor amet venison beef pork belly pig...
+2025-08-25 01:20:45.370 [reactor-http-nio-2] INFO  c.e.w.a.events.AuthorEventListener  - Author ID 1 updated with bio.
+2025-08-25 01:21:02.011 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown  - Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-25 01:21:02.018 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown  - Graceful shutdown complete
+2025-08-25 01:21:04.039 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean  - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-25 01:21:04.039 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource  - HikariPool-1 - Shutdown initiated...
+2025-08-25 01:21:04.039 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource  - HikariPool-1 - Shutdown completed.
