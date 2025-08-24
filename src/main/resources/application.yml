@@ -43,3 +43,18 @@ logging:
     com.example.webapp: DEBUG
     org.springframework: INFO
     org.hibernate: INFO
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics
+  endpoint:
+    health:
+      show-details: always
+  info:
+    app:
+      name: Course Platform API
+      description: A RESTful API for managing courses, authors, schools, and students.
+      version: 1.0.0
+      contact: vamsi.doddapaneni@outlook.com
