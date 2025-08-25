@@ -55,6 +55,6 @@ management:
   info:
     app:
       name: Course Platform API
-      description: A RESTful API for managing courses, authors, schools, and students.
+      description: A RESTful API for managing courses, authors, and students.
       version: 1.0.0
       contact: vamsi.doddapaneni@outlook.com

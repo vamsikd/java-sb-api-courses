@@ -9,7 +9,7 @@ This project is a robust and scalable REST API for a course platform, built with
 
 ## ✨ Key Features
 
-*   **Comprehensive CRUD Operations:** Manage Authors, Courses, Schools, and Students.
+*   **Comprehensive CRUD Operations:** Manage Authors, Courses, and Students.
 *   **RESTful API Design:** Clean and intuitive API endpoints following REST principles.
 *   **Data Validation:** Robust input validation using Jakarta Bean Validation.
 *   **Pagination & Filtering:** Efficient retrieval of large datasets with flexible filtering options.

@@ -1,17 +1,16 @@
 package com.example.webapp.application.student.dto;
 
-public record StudentDto(
-        Integer id,
-        String firstname,
-        String lastname,
-        String email,
-        Short age,
-        Integer schoolId) {
+import com.example.webapp.application.common.dto.BaseAuditableDto;
+import lombok.*;
 
-    @Override
-    public final String toString() {
-        return String.format(
-                "StudentDto [firstname=%s, lastname=%s, email=%s, age=%d, schoolId=%s]",
-                firstname, lastname, email, age, schoolId);
-    }
+@Getter
+@Setter
+@NoArgsConstructor
+public class StudentDto extends BaseAuditableDto {
+    private Long id;
+    private String firstname;
+    private String lastname;
+    private String email;
+    private Short age;
+    private StudentProfileDto profile;
 }

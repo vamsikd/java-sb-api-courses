@@ -4,15 +4,14 @@ These instructions help AI coding agents work effectively in this Spring Boot + 
 
 ## Architecture and layering
 - API layer: REST controllers in `src/main/java/com/example/webapp/api/controllers`.
-  - `StudentController`, `SchoolController` expose CRUD under `/api/students` and `/api/schools`.
+  - `StudentController` expose CRUD under `/api/students`.
   - Global error handling via `GlobalExceptionHandler` using RFC 7807 `ProblemDetail` + `traceId` property.
 - Application layer: services, mappers, repositories under `src/main/java/com/example/webapp/application/*`.
   - Service interfaces + `*ServiceImpl` contain business logic.
   - DTOs as Java records in `application/*/dto`.
-  - Mappers translate DTOs ⇄ entities. Example: `StudentMapper` uses `SchoolRepository.getReferenceById` for lazy Switch your exception responses to ProblemDetail and include traceIdrelation assignment; mapper does not throw.
-  - Repositories are Spring Data JPA `JpaRepository` interfaces (e.g., `StudentRepository`, `SchoolRepository`).
+  - Mappers translate DTOs ⇄ entities. 
+  - Repositories are Spring Data JPA `JpaRepository` interfaces (e.g., `StudentRepository`).
 - Domain layer: JPA entities in `src/main/java/com/example/webapp/domain/entities`.
-  - `Student` ↔ `School` mapped with `@ManyToOne`/`@OneToMany`; JSON cycle control via `@JsonBackReference`/`@JsonManagedReference`.
 
 ## Conventions and patterns
 - DTO validation: Use `jakarta.validation` on Create DTOs; controllers apply `@Valid` on `@RequestBody`.
@@ -32,7 +31,7 @@ These instructions help AI coding agents work effectively in this Spring Boot + 
 - Config at `src/main/resources/application.yml`.
   - MySQL URL: `jdbc:mysql://localhost:3306/springbootdemodb`
   - JPA: `hibernate.ddl-auto=create`, `show-sql=true`, MySQL dialect.
-- Entities: `Student` has unique `email`. `Student.school_id` FK maps to `School`.
+- Entities: `Student` has unique `email`.
 
 ## File map (key examples)
 - Controllers: `api/controllers/*Controller.java`, `GlobalExceptionHandler.java`
@@ -49,7 +48,7 @@ These instructions help AI coding agents work effectively in this Spring Boot + 
   3) Add method to `*Service`/`*ServiceImpl` using repositories; validate IDs here.
   4) Expose in a `*Controller`, annotate `@Valid`.
   5) Errors will flow to the global handler as ProblemDetail.
-- Add a relation field (pattern used by students → schools): set relation by `repo.getReferenceById(id)` in the mapper, validate existence in service if you want 404s instead of 409s on save.
+
 
 ## Important gotchas for agents
 - Don’t move files across layers; follow the package conventions above.

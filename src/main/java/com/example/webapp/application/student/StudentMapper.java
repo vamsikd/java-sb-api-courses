@@ -1,34 +1,28 @@
 package com.example.webapp.application.student;
 
+import com.example.webapp.domain.entities.StudentProfile;
 import org.springframework.stereotype.Service;
-import com.example.webapp.application.school.SchoolRepository;
 import com.example.webapp.application.student.dto.*;
 import com.example.webapp.domain.entities.Student;
 
 @Service
 public class StudentMapper {
 
-    private final SchoolRepository schoolRepository;
-
-    public StudentMapper(SchoolRepository schoolRepository) {
-        this.schoolRepository = schoolRepository;
-    }
-
-    public Student toStudent(CreateStudentDto createDto) {
+    public Student toEntity(CreateStudentDto createDto) {
         Student student = new Student();
         student.setFirstname(createDto.firstname());
         student.setLastname(createDto.lastname());
         student.setEmail(createDto.email());
         student.setAge(createDto.age());
-        // Don't throw here; assume service validated schoolId. Use a lazy reference to
-        // avoid a DB hit.
-        if (createDto.schoolId() != null) {
-            student.setSchool(schoolRepository.getReferenceById(createDto.schoolId()));
+        if (createDto.profile() != null) {
+            StudentProfile profile = this.toEntity(createDto.profile());
+            profile.setStudent(student);
+            student.setProfile(profile);
         }
         return student;
     }
 
-    public Student toStudent(UpdateStudentDto updateDto, Student existingStudent) {
+    public void updateEntity(UpdateStudentDto updateDto, Student existingStudent) {
         existingStudent.setFirstname(updateDto.firstname());
         existingStudent.setLastname(updateDto.lastname());
         existingStudent.setEmail(updateDto.email());
@@ -37,21 +31,58 @@ public class StudentMapper {
         } else {
             existingStudent.setAge(null);
         }
-        // Only update relation if a schoolId is provided; do not throw in the mapper.
-        if (updateDto.schoolId() != null) {
-            existingStudent.setSchool(schoolRepository.getReferenceById(updateDto.schoolId()));
+        if (updateDto.profile() != null) {
+            if (existingStudent.getProfile() != null) {
+                this.updateEntity(updateDto.profile(), existingStudent.getProfile());
+            } else {
+                StudentProfile profile = this.toEntity(updateDto.profile());
+                profile.setStudent(existingStudent);
+                existingStudent.setProfile(profile);
+            }
+
         }
-        return existingStudent;
     }
 
-    public StudentDto toStudentDto(Student student) {
-        Integer schoolId = student.getSchool() != null ? student.getSchool().getId() : null;
-        return new StudentDto(
-                student.getId(),
-                student.getFirstname(),
-                student.getLastname(),
-                student.getEmail(),
-                student.getAge(),
-                schoolId);
+    public StudentDto toDto(Student student) {
+        StudentDto dto = new StudentDto();
+        dto.setId(student.getId());
+        dto.setFirstname(student.getFirstname());
+        dto.setLastname(student.getLastname());
+        dto.setEmail(student.getEmail());
+        dto.setAge(student.getAge());
+        dto.setCreatedAt(student.getCreatedAt());
+        dto.setUpdatedAt(student.getUpdatedAt());
+        dto.setDeleted(student.isDeleted());
+        dto.setDeletedAt(student.getDeletedAt());
+        if (student.getProfile() != null) {
+            dto.setProfile(toDto(student.getProfile()));
+        }
+        return dto;
+    }
+
+    public StudentProfileDto toDto(StudentProfile profile) {
+        return new StudentProfileDto(
+                profile.getId(),
+                profile.getBio(),
+                profile.getProfilePictureUrl());
+    }
+
+    public StudentProfile toEntity(CreateStudentProfileDto createDto) {
+        StudentProfile profile = new StudentProfile();
+        profile.setBio(createDto.bio());
+        profile.setProfilePictureUrl(createDto.profilePictureUrl());
+        return profile;
+    }
+
+    public StudentProfile toEntity(UpdateStudentProfileDto createDto) {
+        StudentProfile profile = new StudentProfile();
+        profile.setBio(createDto.bio());
+        profile.setProfilePictureUrl(createDto.profilePictureUrl());
+        return profile;
+    }
+
+    public void updateEntity(UpdateStudentProfileDto updateDto, StudentProfile existingProfile) {
+        existingProfile.setBio(updateDto.bio());
+        existingProfile.setProfilePictureUrl(updateDto.profilePictureUrl());
     }
 }
